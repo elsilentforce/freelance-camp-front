@@ -5,4 +5,6 @@ import { Component } from '@angular/core'
   template: '<h1>Freelance Camp Dashboard</h1>'
 })
 
-export class HomePageComponent {}
+export class HomePageComponent {
+  title: 'home'
+}
