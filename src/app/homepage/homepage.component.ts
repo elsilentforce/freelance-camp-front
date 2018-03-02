@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'main-app',
+  selector: 'homepage',
   template: '<h1>Freelance Camp Dashboard</h1>'
 })
 
