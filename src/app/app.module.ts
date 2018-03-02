@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './homepage/homepage.component'
+import { DocumentsComponent } from './documents/documents.component'
 
 import { AppRoutingModule } from './app-routing.module'
 
@@ -11,7 +12,8 @@ import { AppRoutingModule } from './app-routing.module'
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    DocumentsComponent
   ],
   imports: [
     BrowserModule,
