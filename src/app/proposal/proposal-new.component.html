@@ -1,7 +1,7 @@
 <h1>Add a new Proposal</h1>
 
 <div class="">
-  <form #proposalForm="ngForm">
+  <form>
     <div class="form-group">
       <label for="customer">Customer</label>
       <input type="text"
@@ -9,7 +9,6 @@
               placeholder="ABC Company"
               required
               name="customer"
-              #customer="ngModel"
               [(ngModel)]="proposal.customer"
       >
     </div>
