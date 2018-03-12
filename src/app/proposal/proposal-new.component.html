@@ -1,6 +1,6 @@
 <h1>Add a new Proposal</h1>
 
-<div class="">
+<div>
   <form>
     <div class="form-group">
       <label for="customer">Customer</label>
@@ -10,8 +10,13 @@
               required
               name="customer"
               [(ngModel)]="proposal.customer"
+              #customer="ngModel"
       >
+      <div *ngIf="customer.invalid && (customer.dirty || customer.touched)">
+        Customer name is required
+      </div>
     </div>
+
 
     <div class="form-group">
       <label for="portfolio_url">Portfolio URL</label>
@@ -21,7 +26,11 @@
               required
               name="portfolio_url"
               [(ngModel)]="proposal.portfolio_url"
+              #portfolio_url="ngModel"
       >
+      <div *ngIf="portfolio_url.invalid && (portfolio_url.dirty || portfolio_url.touched)">
+        Portfolio URL is required
+      </div>
     </div>
 
     <div class="form-group">
@@ -32,7 +41,11 @@
               required
               name="tools"
               [(ngModel)]="proposal.tools"
+              #tools="ngModel"
       >
+      <div *ngIf="tools.invalid && (tools.dirty || tools.touched)">
+        Tools are required
+      </div>
     </div>
 
     <div class="form-group">
@@ -42,7 +55,11 @@
               required
               name="estimated_hours"
               [(ngModel)]="proposal.estimated_hours"
+              #estimated_hours="ngModel"
       >
+      <div *ngIf="estimated_hours.invalid && (estimated_hours.dirty || estimated_hours.touched)">
+        You must specify estimated hours
+      </div>
     </div>
 
     <div class="form-group">
@@ -52,7 +69,11 @@
               required
               name="weeks_to_complete"
               [(ngModel)]="proposal.weeks_to_complete"
+              #weeks_to_complete="ngModel"
       >
+      <div *ngIf="weeks_to_complete.invalid && (weeks_to_complete.dirty || weeks_to_complete.touched)">
+        You must specify the weeks to complete the project
+      </div>
     </div>
 
     <div class="form-group">
@@ -62,7 +83,11 @@
               required
               name="hourly_rate"
               [(ngModel)]="proposal.hourly_rate"
+              #hourly_rate="ngModel"
       >
+      <div *ngIf="hourly_rate.invalid && (hourly_rate.dirty || hourly_rate.touched)">
+        You must indicate your hourly rate
+      </div>
     </div>
 
     <div class="form-group">
